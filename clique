@@ -1,0 +1,103 @@
+
+def cliques_taille_6(liste_adjacence):
+    nbr = 0
+    for noeud in range(len(liste_adjacence)):
+        for voisin1 in liste_adjacence[noeud]:
+            if voisin1 > noeud:
+                for voisin2 in liste_adjacence[noeud]:
+                    if voisin2 > voisin1:
+                        for voisin3 in liste_adjacence[noeud]:
+                            if voisin3 > voisin2:
+                                for voisin4 in liste_adjacence[noeud]:
+                                    if voisin4 > voisin3:
+                                        for voisin5 in liste_adjacence[noeud]:
+                                            if voisin5 > voisin4:
+                                                # Vérifier que tous les sommets sont connectés entre eux
+                                                if (voisin5 in liste_adjacence[voisin1] and
+                                                    voisin5 in liste_adjacence[voisin2] and
+                                                    voisin5 in liste_adjacence[voisin3] and
+                                                    voisin5 in liste_adjacence[voisin4] and
+                                                    voisin4 in liste_adjacence[voisin1] and
+                                                    voisin4 in liste_adjacence[voisin2] and
+                                                    voisin4 in liste_adjacence[voisin3] and
+                                                    voisin3 in liste_adjacence[voisin1] and
+                                                    voisin3 in liste_adjacence[voisin2] and
+                                                    voisin2 in liste_adjacence[voisin1]):
+                                                    nbr += 1
+    return nbr
+
+def cliques_taille_7(liste_adjacence):
+    nbr = 0
+    for noeud in range(len(liste_adjacence)):
+        for voisin1 in liste_adjacence[noeud]:
+            if voisin1 > noeud:
+                for voisin2 in liste_adjacence[noeud]:
+                    if voisin2 > voisin1:
+                        for voisin3 in liste_adjacence[noeud]:
+                            if voisin3 > voisin2:
+                                for voisin4 in liste_adjacence[noeud]:
+                                    if voisin4 > voisin3:
+                                        for voisin5 in liste_adjacence[noeud]:
+                                            if voisin5 > voisin4:
+                                                for voisin6 in liste_adjacence[noeud]:
+                                                    if voisin6 > voisin5:
+                                                        # Vérifier que tous les sommets sont connectés entre eux
+                                                        if (voisin6 in liste_adjacence[voisin1] and
+                                                            voisin6 in liste_adjacence[voisin2] and
+                                                            voisin6 in liste_adjacence[voisin3] and
+                                                            voisin6 in liste_adjacence[voisin4] and
+                                                            voisin6 in liste_adjacence[voisin5] and
+                                                            voisin5 in liste_adjacence[voisin1] and
+                                                            voisin5 in liste_adjacence[voisin2] and
+                                                            voisin5 in liste_adjacence[voisin3] and
+                                                            voisin5 in liste_adjacence[voisin4] and
+                                                            voisin4 in liste_adjacence[voisin1] and
+                                                            voisin4 in liste_adjacence[voisin2] and
+                                                            voisin4 in liste_adjacence[voisin3] and
+                                                            voisin3 in liste_adjacence[voisin1] and
+                                                            voisin3 in liste_adjacence[voisin2] and
+                                                            voisin2 in liste_adjacence[voisin1]):
+                                                            nbr += 1
+    return nbr
+
+def cliques_taille_8(liste_adjacence):
+    nbr = 0
+    for noeud in range(len(liste_adjacence)):
+        for voisin1 in liste_adjacence[noeud]:
+            if voisin1 > noeud:
+                for voisin2 in liste_adjacence[noeud]:
+                    if voisin2 > voisin1:
+                        for voisin3 in liste_adjacence[noeud]:
+                            if voisin3 > voisin2:
+                                for voisin4 in liste_adjacence[noeud]:
+                                    if voisin4 > voisin3:
+                                        for voisin5 in liste_adjacence[noeud]:
+                                            if voisin5 > voisin4:
+                                                for voisin6 in liste_adjacence[noeud]:
+                                                    if voisin6 > voisin5:
+                                                        for voisin7 in liste_adjacence[noeud]:
+                                                            if voisin7 > voisin6:
+                                                                # Vérifier que tous les sommets sont connectés entre eux
+                                                                if (voisin7 in liste_adjacence[voisin1] and
+                                                                    voisin7 in liste_adjacence[voisin2] and
+                                                                    voisin7 in liste_adjacence[voisin3] and
+                                                                    voisin7 in liste_adjacence[voisin4] and
+                                                                    voisin7 in liste_adjacence[voisin5] and
+                                                                    voisin7 in liste_adjacence[voisin6] and
+                                                                    voisin6 in liste_adjacence[voisin1] and
+                                                                    voisin6 in liste_adjacence[voisin2] and
+                                                                    voisin6 in liste_adjacence[voisin3] and
+                                                                    voisin6 in liste_adjacence[voisin4] and
+                                                                    voisin6 in liste_adjacence[voisin5] and
+                                                                    voisin5 in liste_adjacence[voisin1] and
+                                                                    voisin5 in liste_adjacence[voisin2] and
+                                                                    voisin5 in liste_adjacence[voisin3] and
+                                                                    voisin5 in liste_adjacence[voisin4] and
+                                                                    voisin4 in liste_adjacence[voisin1] and
+                                                                    voisin4 in liste_adjacence[voisin2] and
+                                                                    voisin4 in liste_adjacence[voisin3] and
+                                                                    voisin3 in liste_adjacence[voisin1] and
+                                                                    voisin3 in liste_adjacence[voisin2] and
+                                                                    voisin2 in liste_adjacence[voisin1]):
+                                                                    nbr += 1
+    return nbr
